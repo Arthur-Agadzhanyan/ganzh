@@ -1,0 +1,121 @@
+.card{
+    max-width: 560px;
+    width: 100%;
+
+    background: #fff;
+    color: #252B42;
+    margin: 2rem auto 3rem auto;
+    padding: 1.5rem 3.1rem;
+
+    &__title{
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 2.4rem;
+
+        @media screen and (max-width: 500px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__subtitle{
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    &__descriptions{
+        margin: 1.25rem 0rem;
+        text-align: center;
+
+        p{
+            margin-bottom: 1.25rem;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 0.875rem;
+        }
+    }
+
+    &__info_block{
+        margin: 1.25rem 0rem;
+        @media (max-width: 1000px) {
+            font-size: 0.875rem;
+        }
+        ul{
+            margin: 1.25rem 0rem;
+            li{
+                line-height: 1.5rem;
+
+                @media (max-width: 500px) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        h5.info_block__title{
+            text-align: left;
+        }
+
+        .info_block__title{
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+
+            @media (max-width: 1000px) {
+                font-size: 0.875rem;
+            }
+        }
+
+        .info_block__time_block{
+            margin: 1.25rem 0rem;
+        }
+    }
+
+    &__text{
+        font-size: 1rem;
+        line-height: 1.25rem;
+        @media (max-width: 1000px) {
+            font-size: 0.875rem;
+        }
+    }
+
+    &__list_item{
+        margin-bottom: 1.25rem;
+    }
+
+    &__button{
+        display: block;
+        border: 1px solid #000;
+        padding: 0.75rem 1.5rem;
+        font-weight: 700;
+        color: #000;
+        background: transparent;
+        transition: all .2s linear;
+        cursor: pointer;
+        margin: 2rem auto 0rem;
+
+        &:hover{
+            background: #000;
+            color: #fff;
+        }
+
+        &_margin_disabled{
+            margin: 1rem auto 0rem !important;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 1.5rem 2.5rem;
+    }
+    @media screen and (max-width: 360px) {
+        padding: 1.5rem 1.7rem;
+    }
+}
+
+.line{
+    width: 3.125rem;
+    height: 2px;
+    background: #000;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+}
